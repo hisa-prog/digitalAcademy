@@ -31,7 +31,7 @@
 .footer-menu {
   display: flex;
   flex-direction: column;
-  border-left: 4px solid var(--main-red);
+  border-left: 4px solid @red;
 }
 
 .footer-link {
@@ -46,7 +46,7 @@
 
   &:hover,
   &:active {
-    color: var(--main-red-hover);
+    color: @red-hover;
   }
 
   &:last-child {
@@ -124,13 +124,13 @@
   display: flex;
   justify-content: center;
   margin-right: 15px;
-  border: 2px solid var(--main-black);
+  border: 2px solid @black;
   border-radius: 0;
   transition: all 0.3s;
 }
 
 .footer-block-with-checkbox input:checked + label > span {
-  border: 10px solid var(--main-black);
+  border: 10px solid @black;
   animation: bounce 250ms;
 }
 
