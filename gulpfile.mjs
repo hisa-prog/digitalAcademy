@@ -29,6 +29,7 @@ const resources = {
     jsDev: "src/scripts/dev/**/*.js",
     jsVendor: "src/scripts/vendor/**/*.js",
     images: "src/assets/images/**/*.{png,jpg,jpeg,webp,gif,svg}",
+    documents: "src/assets/documents/*.pdf",
     less: "src/styles/**/*.less",
     svgSprite: "src/assets/svg-sprite/*.svg",
     static: [
@@ -131,6 +132,12 @@ function images() {
     .pipe(gulp.dest("dist/assets/images"))
 }
 
+function documents() {
+    return gulp
+    .src(resources.documents)
+    .pipe(gulp.dest("dist/assets/documents"))
+}
+
 function svgSprite() {
     return gulp
     .src(resources.svgSprite)
@@ -158,6 +165,7 @@ const build = gulp.series(
     js,
     jsCopy,
     images,
+    documents,
     svgSprite
 )
 
@@ -176,6 +184,7 @@ function serve() {
     gulp.watch(resources.jsVendor, gulp.series(jsCopy, reloadServer))
     gulp.watch(resources.static, { delay: 500 }, gulp.series(copy, reloadServer))
     gulp.watch(resources.images, { delay: 500 }, gulp.series(images, reloadServer))
+    gulp.watch(resources.documents, gulp.series(documents, reloadServer))
     gulp.watch(resources.svgSprite, gulp.series(svgSprite, reloadServer))
 }
 
@@ -189,6 +198,7 @@ export {
     js,
     jsCopy,
     images,
+    documents,
     svgSprite,
     build,
     serve,

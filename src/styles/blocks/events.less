@@ -1,9 +1,22 @@
 .events {
-    margin: 138px auto;
     max-width: 1414px;
     width: 100%;
     padding-right: 40px;
     padding-left: 40px;
+}
+
+.events_route {
+    display: flex;
+    margin: 40px 0px;
+    
+    a:first-child {
+        margin-right: 8px;
+        &:active,
+        &:hover {
+            color: @red-hover;
+            cursor: pointer;
+        }
+    }
 }
 
 .events__listing, 
@@ -11,6 +24,7 @@
     display: flex; 
     flex-direction: column;
     align-items: center;
+    margin: 138px auto;
 }
 
 .listing__section-title, 
