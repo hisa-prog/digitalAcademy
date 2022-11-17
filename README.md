@@ -1,4 +1,4 @@
-﻿# digitalAcademy
+﻿# digitalAcademy by Vladislav Zavzyatov
 
 command for build: npm run build
 
