@@ -1,29 +1,15 @@
-.events {
+.blog {
   max-width: 1414px;
   width: 100%;
   padding-right: 40px;
   padding-left: 40px;
+  margin: 0 auto;
 
-  .events_route {
-    display: flex;
-    margin: 40px 0px;
-
-    a:first-child {
-      margin-right: 8px;
-      &:active,
-      &:hover {
-        color: @red-hover;
-        cursor: pointer;
-      }
-    }
-  }
-
-  .events__listing,
+  .blog_listing,
   .listing {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 138px auto;
 
     .listing__section-title,
     .section-title {
@@ -40,10 +26,22 @@
       color: white;
     }
 
-    .listing__events-cards {
+    .listing__blog-cards {
       display: flex;
       flex-wrap: wrap;
       margin: 0 -30px;
+    }
+
+    .listing__blog,
+    .link {
+        margin: 70px 0px;
+        align-self: flex-end;
+
+        &:active,
+        &:hover {
+            color: @red-hover;
+            cursor: pointer;
+        }
     }
   }
 }

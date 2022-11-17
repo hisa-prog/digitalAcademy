@@ -33,68 +33,10 @@ a {
 }
 
 .main {
-  flex: 1 0 auto;
+  display: flex;
   align-self: center;
-}
-
-.main-block {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-
-  p {
-    margin: 0;
-    max-width: 948px;
-
-    font-family: @font-Lora;
-    font-size: 2.8125rem /*45px*/;
-    line-height: 3.625rem /*58px*/;
-    text-transform: uppercase;
-    text-align: center;
-  }
-}
-
-.main-block-logo {
+  max-width: 1414px;
   width: 100%;
-  margin: 70px 0;
-
-  pointer-events: none;
-}
-
-.main-block-want {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 100px 0;
-
-  p {
-    margin: 0;
-    padding-left: 28px;
-
-    font-family: @font-Lora;
-    font-size: 1.375rem /*22px*/;
-    line-height: 1.875rem /*30px*/;
-    letter-spacing: 0.02rem;
-    text-transform: uppercase;
-  }
-}
-
-.main-block-want-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 46px;
-
-  button:first-child {
-    margin-right: 54px;
-  }
-
-  button:last-child {
-    margin-left: 54px;
-  }
+  height: 100%;
 }

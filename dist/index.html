@@ -54,22 +54,93 @@
 
   </html>
 
-  <section class="main">
-    <div class="main-block">
-      <p>арт — пространство</p>
-      <svg class="main-block-logo" width="1920" height="325">
-        <use xlink:href="assets/icons/symbols.svg#main-logo" />
-      </svg>
-      <p>для людей, горящих сердец и делом место для настоящего</p>
-      <div class="main-block-want">
-        <p>Я хочу:</p>
-        <div class="main-block-want-buttons">
-          <button class="button-red">Провести мероприятие</button>
-          <button class="button-white">Стать арендатором</button>
+  <main>
+
+    <section class="main-section">
+      <div class="main-section__block">
+        <p>арт — пространство</p>
+        <svg class="main-section__block-logo" height="325">
+          <use xlink:href="assets/icons/symbols.svg#main-logo" />
+        </svg>
+        <p>для людей, горящих сердец и делом место для настоящего</p>
+        <div class="main-section__block-want">
+          <p>Я хочу:</p>
+          <div class="main-section__block-want-buttons">
+            <button class="button-red">Провести мероприятие</button>
+            <button class="button-white">Стать арендатором</button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <section class="blog">
+      <div class="blog__listing listing">
+        <h2 class="listing__section-title section-title">Блог</h2>
+        <div class="listing__blog-cards">
+          <!-- prettier-ignore -->
+          <article class="blog-card ">
+            <a href="/" class="blog-card__link">
+              <picture class="blog-card__picture">
+                <img src="assets/images/blog/theatre.png" alt="Theatre Photosession" class="blog-card__img" />
+              </picture>
+            </a>
+            <div class="blog-card__info">
+              <time datetime="2022-11-26T00:00" class="blog-card__time">26.11.2022</time>
+              <a href="#" class="blog-card__title-link">
+                <h4 class="blog-card__title">Фотосессия в стенах Театра драмы</h4>
+                <div class="blog-card__arrow arrow">
+                  <svg class="arrow__icon" width="92" height="62">
+                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                  </svg>
+                </div>
+              </a>
+              <p class="blog-card__description">Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было</p>
+            </div>
+          </article>
+          <article class="blog-card ">
+            <a href="/" class="blog-card__link">
+              <picture class="blog-card__picture">
+                <img src="assets/images/blog/vr.png" alt="vr" class="blog-card__img" />
+              </picture>
+            </a>
+            <div class="blog-card__info">
+              <time datetime="2022-11-05T00:00" class="blog-card__time">05.11.2022</time>
+              <a href="#" class="blog-card__title-link">
+                <h4 class="blog-card__title">Выставка VR в Томске</h4>
+                <div class="blog-card__arrow arrow">
+                  <svg class="arrow__icon" width="92" height="62">
+                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                  </svg>
+                </div>
+              </a>
+              <p class="blog-card__description">Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.</p>
+            </div>
+          </article>
+          <article class="blog-card ">
+            <a href="/" class="blog-card__link">
+              <picture class="blog-card__picture">
+                <img src="assets/images/blog/rockingRadio.png" alt="rocking radio" class="blog-card__img" />
+              </picture>
+            </a>
+            <div class="blog-card__info">
+              <time datetime="2022-11-01T00:00" class="blog-card__time">01.11.2022</time>
+              <a href="#" class="blog-card__title-link">
+                <h4 class="blog-card__title">Rocking radio в заброшенном ангаре</h4>
+                <div class="blog-card__arrow arrow">
+                  <svg class="arrow__icon" width="92" height="62">
+                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                  </svg>
+                </div>
+              </a>
+              <p class="blog-card__description">15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска.</p>
+            </div>
+          </article>
+        </div>
+        <a href="#" class="listing__blog link">Смотреть все</a>
+      </div>
+    </section>
+
+  </main>
 
   <!DOCTYPE html>
   <html lang="ru">
