@@ -1,5 +1,123 @@
 <!DOCTYPE html>
 <html lang="ru">
+<!-- <html lang="ru" class="show-event-popup"> -->
+<div class="pp" id="eventPP">
+  <div class="pp__wrapper">
+    <div class="pp__sticky-close">
+      <button class="pp__x-btn x-btn">
+        <svg class="x-btn__icon" width="60" height="60">
+          <use xlink:href="assets/icons/symbols.svg#close" />
+        </svg>
+      </button>
+    </div>
+    <div class="pp__container">
+      <h2 class="pp__title">Заполните форму
+        <br />и мы подберем площадку
+      </h2>
+      <form class="pp__form form">
+        <div class="form__list">
+          <div class="field form__field form__field--w50">
+            <h6 class="field__title">Формат мероприятия</h6>
+            <div class="field__radio radio">
+              <label class="radio__item">
+                <input class="radio__input" type="radio" name="format" value="seminar" checked />
+                <span class="radio__mark"></span>
+                <span class="radio__label">Мастер-класс/семинар</span>
+              </label>
+
+              <label class="radio__item">
+                <input class="radio__input" type="radio" name="format" value="concert" />
+                <span class="radio__mark"></span>
+                <span class="radio__label">Концерт/выступление</span>
+              </label>
+
+              <label class="radio__item">
+                <input class="radio__input" type="radio" name="format" value="show" />
+                <span class="radio__mark"></span>
+                <span class="radio__label">Выставка/показ</span>
+              </label>
+
+              <label class="radio__item">
+                <input class="radio__input" type="radio" name="format" value="other" />
+                <span class="radio__mark"></span>
+                <span class="radio__label">Другое</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form__group form__group--w50">
+            <div class="form__field field">
+              <h6 class="field__title">Планируемое количество посетителей:</h6>
+              <select class="field__select" name="amount">
+                <option value="20">до 20 человек</option>
+                <option value="100">от 20 до 100 человек</option>
+                <option value="500">от 100 до 500 человек</option>
+                <option value="1000">более 500 человек</option>
+              </select>
+            </div>
+
+            <div class="form__field field">
+              <h6 class="field__title">Дата проведения:</h6>
+
+              <div class="field__date-inputs">
+                <input class="field__date-input" type="text" placeholder="ДД" />
+                <input class="field__date-input" type="text" placeholder="ММ" />
+                <input class="field__date-input field__date-input--year" type="text" placeholder="ГГГГ" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form__section">
+          <h6 class="form__section-title">Контакные данные:</h6>
+          <div class="form__list">
+            <label class="field form__field">
+              <span class="field__label">Имя*</span>
+              <input class="field__input" type="text" placeholder="Имя" name="name" required />
+            </label>
+
+            <label class="field form__field">
+              <span class="field__label">Фамилия*</span>
+              <input class="field__input" type="text" placeholder="Фамилия" name="lastname" required />
+            </label>
+
+            <label class="field form__field">
+              <span class="field__label">Телефон*</span>
+              <input class="field__input" type="tel" placeholder="+7 (___) ___ __ __" name="phone" required />
+            </label>
+
+            <label class="field form__field">
+              <span class="field__label">Email*</span>
+              <input class="field__input" type="email" placeholder="Email" name="email" required />
+            </label>
+          </div>
+        </div>
+
+        <label class="field form__field">
+          <span class="field__title">Есть пожелания? Напишите нам:</span>
+          <textarea class="field__textarea" name="Пожелания"></textarea>
+        </label>
+
+        <label class="check">
+          <input type="checkbox" id="feedback-checkbox" checked />
+          <label for="feedback-checkbox">
+            <span></span> Согласен на обработку персональных данных
+          </label>
+        </label>
+
+        <div class="form__btns">
+          <button type="submit" class="btn form__submit form__submit--w50">
+            Отправить
+          </button>
+
+          <button type="button" class="form__close-btn">Закрыть</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+
 
 <!DOCTYPE html>
 <html lang="ru">
@@ -8,18 +126,16 @@
   <meta charset="UTF=8" />
   <title>Lenni Art</title>
 
-  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/icons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16x16.png" />
-  <link rel="manifest" href="../../assets/icons/site.webmanifest" />
-  <link rel="mask-icon" href="../../assets/icons/safari-pinned-tab.svg" color="#5bbad5" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png" />
+  <link rel="manifest" href="assets/icons/site.webmanifest" />
+  <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#5bbad5" />
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#ffffff" />
 
-  <link rel="stylesheet" href="../../styles/styles.css" />
-  <link rel="stylesheet" href="../../styles/header.css" />
-  <link rel="stylesheet" href="../../styles/footer.css" />
-  <link rel="stylesheet" href="../../styles/atoms.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/styles.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" type="text/css">
 </head>
