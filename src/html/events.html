@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   @@include('blocks/head.html')
 
   <body class="body">
-
     @@include('blocks/page-header.html')
-    
+
     <main class="main">
       <section class="events">
         <div class="events_route">
@@ -80,10 +78,50 @@
                     ])
           </div>
         </div>
+
+        <div class="events__services services">
+          <h2 class="services__section-title section-title">
+            Дополнительные услуги
+          </h2>
+          <p class="services__section-description section-description">
+            Перед запуском проекта, мы подготавливаем подробную смету и
+            согласуем ее с клиентом. Убедившись, что все пожеланию учтены и мы
+            можем приступать к реализациии проекта, начинается сложная, но
+            интересная работа, результатом которой будет проведение вашего
+            мероприятия на высшем уровне.
+          </p>
+
+          @@include('blocks/table-tariffs.html')
+        </div>
+
+        @@include('blocks/want.html')
+
+        <div class="events__contacts contacts">
+          <!-- prettier-ignore -->
+          @@loop('blocks/contacts-card.html', [
+              {
+                "class" : "",
+                "icon" : "warning",
+                "title" : "Цена",
+                "description" : "Цены, указанные на сайте носят информационный характер. Мы придерживаемся индивидуального подхода в работе с клиентом."
+              },
+              {
+                "class" : "",
+                "icon" : "contact",
+                "title" : "Контакты",
+                "description" : "Отдел организации мероприятий <br/> +7 499 350 0730 <br/> hi@tagree.ru"
+              },
+              {
+                "class" : "",
+                "icon" : "handshake",
+                "title" : "Преимущество",
+                "description" : "Мы имеем все возможности для того, чтобы помочь как малому бизнесу и молодым талантам, так и большим корпорациям и холдингам."
+              },
+            ])
+        </div>
       </section>
     </main>
 
     @@include('blocks/page-footer.html')
-    
   </body>
 </html>
